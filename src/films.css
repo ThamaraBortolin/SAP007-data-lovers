@@ -22,9 +22,7 @@ header {
   align-items: center;
 }
 
-
 .list{
-header {
   display: inline-flex;
 }
 
@@ -64,7 +62,6 @@ main {
   display: flex;
   background-color: #95bad7;
   color: #003563;
-  width: 100%;
   margin: auto;
   background-color: #95bad7;
   justify-content: center;
@@ -150,7 +147,7 @@ main {
   color: #bcd0df;
   width: 350px;
   height: 450px;
-  font-size: 84%;
+  font-size: 1.4vh;
 }
 
 .poster {
@@ -166,6 +163,12 @@ main {
 
 .infoFilms{
   padding: 0% 2% ;
+}
+
+@media  screen and (max-width: 820px){
+  .back{
+    font-size: 1.1vh;
+  }
 }
 
 @media screen and (max-width: 640px) {

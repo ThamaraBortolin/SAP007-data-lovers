@@ -1,7 +1,8 @@
-import {
-} from './data.js';
-
+import { searchCharacter, filterAlfa}
+from './data.js';
 import data from './data/ghibli/ghibli.js';
+
+//print personagens
 
 const peopleImage = document.getElementById('cardsCharacters');
   function showCharacter(arrPeople) {
@@ -26,3 +27,29 @@ const characters = data.films.map(arrPeople => arrPeople.people)
 const arrCharacters = [].concat.apply([], characters);
 
 showCharacter(arrCharacters);
+
+//filtro buscar por nome
+const namePerson= document.getElementById('searchCharac');
+
+const filterName = () => {
+  const typeName = namePerson.value
+   const selectedCharacter = searchCharacter(arrCharacters, typeName);
+  showCharacter(selectedCharacter);
+};
+namePerson.addEventListener('keyup', filterName);
+
+
+//ordem alfabética
+const orderFilter = (a)=>{
+  const orderSelec = a.target.value;
+  if(orderSelec !== ""){
+    const filterOrder = filterAlfa(arrCharacters, orderSelec)
+    showCharacter(filterOrder)
+  }
+}
+
+const order = document.getElementById("selecOrder")
+order.addEventListener ("change", orderFilter)
+
+
+

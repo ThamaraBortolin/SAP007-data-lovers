@@ -1,5 +1,5 @@
 import { describe, it } from 'eslint/lib/rule-tester/rule-tester';
-import { filterFilms, filters, searchCharacter } from '../src/data.js';
+import {searchCharacter, filterAlfa, filterFilms, filters} from '../src/data.js';
 
 const objFilms = [
   {
@@ -35,6 +35,63 @@ const objChacact = [
   }
 ]
 
+describe('test searchCharacter', () =>{
+  it('is a function', () =>{
+    expect(typeof searchCharacter).toBe('function')
+  })
+
+  it('returns searchCharacter', () => {
+    expect(searchCharacter(objChacact, "Taeko Okajima")).toEqual([
+      {
+        "name": "Taeko Okajima",
+      }
+    ]);
+  });
+});
+
+describe('test filteAz', () =>{
+  it('is a function', () =>{
+    expect(typeof filterAlfa).toBe('function')
+  })
+
+  it('returns filterAz', () => {
+    expect(filterAlfa(objChacact,"a-z")).toEqual([
+      {
+        "name": "Grandmother Okajima",
+      },
+
+      {
+        "name": "Mr. Okajima",
+      },
+
+      {"name": "Taeko Okajima",
+      }
+    ]);
+  });
+});
+
+describe('test filterZa', () =>{
+  it('is a function', () =>{
+    expect(typeof filterAlfa).toBe('function')
+  })
+
+  it('returns filterZa', () => {
+    expect(filterAlfa(objChacact,"z-a")).toEqual([
+      {
+        "name": "Taeko Okajima",
+      },
+
+      {
+        "name": "Mr. Okajima",
+      },
+
+      {
+        "name": "Grandmother Okajima",
+      }
+    ]);
+  });
+});
+
 describe('test filterFilms', () => {
   it('is a function', () => {
     expect(typeof filterFilms).toBe('function');
@@ -49,6 +106,10 @@ describe('test filterFilms', () => {
   });
 });
 
+describe('test filteAz', () =>{
+  it('is a function', () =>{
+    expect(typeof filterAlfa).toBe('function')
+  })
 
 describe('test orderAToZ', () => {
   it('is a function', () => {
@@ -201,17 +262,4 @@ describe('test orderHigher', () =>{
       }
     ])
   })
-})
-
-describe('test searchCharacter', () =>{
-  it('is a function', () =>{
-    expect(typeof searchCharacter).toBe('function')
-  })
-
-  it('returns searchCharacter', () => {
-    let returnTest = [objChacact[0]]
-    expect(searchCharacter(objChacact, "Taeko Okajima")).toEqual(returnTest)
-  })
-})
-
-
+})})

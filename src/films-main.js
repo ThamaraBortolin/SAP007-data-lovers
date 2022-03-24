@@ -30,7 +30,6 @@ function printCards(filmes) {
 }
 
 printCards(films)
-console.log(data);
 
 const searchMovie = () =>{
   const valueSelec = searchFilms.value;
@@ -46,7 +45,6 @@ const ordenator = (e) =>{
   const orderSelec = e.target.value;
   if (orderSelec !== ""){
     const filterOrder = filters(films, orderSelec)
-    console.log(filterOrder)
     printCards(filterOrder)
   }
 }

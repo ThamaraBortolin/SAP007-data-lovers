@@ -21,11 +21,11 @@ export const filters = (films, orderSelec) => {
   }
 
   if(orderSelec === "lower"){
-    return films.sort((a,b) => a.rt_score > b.rt_score ? 1 : -1)
+    return films.sort((a,b) => parseInt(a.rt_score) > parseInt(b.rt_score) ? 1 : -1)
   }
 
   if(orderSelec === "higher"){
-    return films.sort((a,b) => a.rt_score > b.rt_score ? -1 : 1)
+    return films.sort((a,b) => parseInt(a.rt_score) > parseInt(b.rt_score) ? -1 : 1)
   }
 }
 

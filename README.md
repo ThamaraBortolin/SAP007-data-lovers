@@ -20,19 +20,23 @@ O Studio Ghibli, é conhecido mundialmente por conta da qualidade de seus filmes
 ## 2. História de usuário
 
 Este espaço é dedicado ao entendimento de quem será o usuário final. Utilizamos algumas perguntas chave, para assim definir qual o propósito da página web e utilizar as respostas como  guia  para o desenho dos protótipos de baixa e alta fidelidade.
-<img src= "./imgReadme/hitoria.png" width= "400"/>
+
+<img src= "./imgReadme/historia.png" width= "600"/>
 
 
 ## 3. Protótipos da página
 
 Prótotipo de baixa fidelidade:
-<img src= "./imgReadme/prototipobaixa.jpeg" width="400"/>
+
+<img src= "./imgReadme/prototipobaixa.jpeg" width="600"/>
 
 Protótipo de alta fidelidade:
-<img src= "./imgReadme/prototipoalta.png" width="400"/>
+
+<img src= "./imgReadme/prototipoalta.png" width="600"/>
 
 Paleta de cores utilizada:
-<img src= "./imgReadme/paleta.png" width="400"/>
+
+<img src= "./imgReadme/paleta.png" width="600"/>
 
 
 ## 4. Critérios de aceitação do projeto

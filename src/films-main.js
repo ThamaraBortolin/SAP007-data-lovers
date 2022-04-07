@@ -56,3 +56,10 @@ orderAge.addEventListener("change", ordenator)
 
 const orderScore = document.getElementById("inputScore")
 orderScore.addEventListener("change", ordenator)
+
+let clear = document.querySelector('.resetButton')
+clear.addEventListener('click', resetFilter, printCards)
+
+function resetFilter(){
+  location.reload()
+}

@@ -67,6 +67,7 @@ main {
   justify-content: center;
   justify-items: center;
   flex-wrap: wrap;
+  min-height: 78vh;
 }
 
 .filterFilms {
@@ -82,6 +83,19 @@ main {
   font-size: 1vmax;
   text-align: center;
   box-shadow: inset 0 0 0.3em #003563;
+}
+
+.resetButton{
+  color: #003563;
+  background-color: #95bad7;
+  border-radius: 0.5vmax;
+  border: 0.1vmax solid #003563;
+  height: 4vh;
+  width: auto;
+  font-size: 1vmax;
+  text-align: center;
+  box-shadow: inset 0 0 0.3em #003563;
+  margin: 1vmax;
 }
 
 .inputFilms {

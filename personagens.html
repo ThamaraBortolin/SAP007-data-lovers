@@ -11,7 +11,12 @@
 
 <body>
   <header role="banner" class="header">
-    <nav>
+    <figure class="imglogo">
+      <a href="./index.html" >
+        <img src="img/logo.png" alt="image host" class="logo">
+      </a>
+    </figure>
+    <nav class="filmsAndCharac">
       <ul class="list">
         <li class="content">
           <a id="films" href="films.html">
@@ -23,33 +28,24 @@
               Characters</a>
           </a>
         </li>
-        <li class="content">
-          <a id="about" href="about.html">
-            About
-          </a>
-        </li>
       </ul>
     </nav>
-    <figure class="imglogo">
-      <a href="./index.html" >
-        <img src="img/logo.png" alt="image host" class="logo">
-      </a>
-    </figure>
   </header>
   <main class="mainPersonagens">
+    <section class="filters">
     <input type="search" id="searchCharac" class="filterCharacters inputCharacters" placeholder="Find a character">
     <select id="selecOrder" name="filtroPersonagens" class="filterCharacters">
       <option id= "ascend" value="a-z">A-Z</option>
       <option id= "descending" value="z-a">Z-A</option>
     </select>
+  </section>
 
     <hr>
     <sections class="cardsCharacters" id="cardsCharacters">
     </sections>
   </main>
-  <hr>
   <footer>
-    <p> Copyright by ©️ Thâmara Bortolin e Wayra Arendartchuk </p>
+    <p class="footerContent"> Developed by <a id="gitHub" href="https://github.com/ThamaraBortolin" target="_blanck"><strong>Thamara Bortolin</strong> </a></p>
   </footer>
   <script src="personagens-main.js" type="module"></script>
 </body>

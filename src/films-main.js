@@ -7,7 +7,7 @@ const films = data.films
 function printCards(filmes) {
   document.getElementById('cardsFilms').innerHTML = filmes.map((item) =>
     `
-  <div class="Cards">
+  <div class="cards">
     <div class="cardFlip">
       <div class="front">
         <figure>

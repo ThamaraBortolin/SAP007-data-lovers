@@ -63,3 +63,8 @@ clear.addEventListener('click', resetFilter, printCards)
 function resetFilter(){
   location.reload()
 }
+
+let btnPageUp = document.querySelector(".pageUp")
+btnPageUp.addEventListener("click", function(){
+  window.scrollTo(0,0)
+})

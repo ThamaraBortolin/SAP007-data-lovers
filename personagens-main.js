@@ -45,5 +45,7 @@ const orderFilter = (a)=>{
 const order = document.getElementById("selecOrder")
 order.addEventListener ("change", orderFilter)
 
-
-
+let btnPageUp = document.querySelector(".pageUp")
+btnPageUp.addEventListener("click", function(){
+  window.scrollTo(0,0)
+})

@@ -1,9 +1,10 @@
 :root{
-  --main: black ;
+  --main: #252627 ;
   --header:#EEB4D4;
   --footer: #30A094;
   --card: #84cec6;
   --font:black;
   --border:#01144b;
-  --input:#3b3a3a80;
+  --input:#eeb4d4;
+  --border: #f53ea3;
 }

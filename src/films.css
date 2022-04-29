@@ -27,6 +27,7 @@ header{
   padding: 0% 2%;
   justify-content: space-between;
   align-items: center;
+  border-bottom: #f53ea3 solid 2px;
 }
 
 .filmsAndCharac{
@@ -75,6 +76,7 @@ header img{
 }
 main{
   width: 100%;
+  height: 100%;
   background-color: var(--main);
   display: flex;
   flex-direction: column;
@@ -92,7 +94,8 @@ main{
   background-color: var(--input);
   color: var(--header);
   border: solid 1px black;
-  border-bottom: 2px solid var(--header);
+  border-bottom: 2px solid var(--border);
+  color:black;
   border-radius: 5px ;
   cursor: pointer;
 }
@@ -102,7 +105,7 @@ main{
 }
 
 .filterFilms::placeholder{
-  color: var(--header);
+  color: black;
 }
 
 option{
@@ -110,10 +113,10 @@ option{
 }
 
 .resetButton{
-  border: 2px solid var(--header);
+  border: 2px solid var(--border);
   margin: auto 2%;
   background-color: var(--input);
-  color: var(--header);
+  color: black;
   padding: 0.5%;
   border-radius: 10px;
   cursor: pointer;
@@ -142,6 +145,19 @@ option{
 
 .titles{
   font-size: 1vmax;
+}
+
+.pageUp{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.pageUp img{
+  width: 120px;
+  height: 130px;
 }
 
 body::-webkit-scrollbar{
